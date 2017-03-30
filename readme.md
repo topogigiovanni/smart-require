@@ -5,7 +5,7 @@
 
 
 
-##Introduction for the Non-Developer
+## Introduction for the Non-Developer
 
 SmartRequire.js loads your site's scripts into a page and saves them in localStorage so they can be reused after the session until they are expired. It also checks to see if the scripts are already in localStorage, and if not, loads them. This prevents unneccessary reloading of scripts and can improve load time and website performance.
 
@@ -30,7 +30,7 @@ To build the project, you will first need to install the necessary dependencies 
 Run:
 
 ```sh
-$ npm install & bower install
+$ npm install && bower install
 ```
 
 in the project root to get everything you need. Next, to actually build the project you will need [Grunt](http://gruntjs.com).
