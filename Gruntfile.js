@@ -1,4 +1,4 @@
-module.exports = function( grunt ) {
+module.exports = function(grunt) {
 	'use strict';
 
 	grunt.initConfig({
@@ -13,14 +13,13 @@ module.exports = function( grunt ) {
 					'* (c) <%= pkg.author.name %>;' +
 					' <%= _.pluck(pkg.licenses, "type").join(", ") %> License\n' +
 					'* Created by: <%= _.pluck(pkg.maintainers, "name").join(", ") %>\n' +
-					'* Contributors: <%= _.pluck(pkg.contributors, "name").join(", ") %>\n' +
 					'* Uses rsvp.js, https://github.com/tildeio/rsvp.js\n' +
 					'*/',
 				stripBanners: true
 			},
 			dist: {
-				src: ['lib/basket.js'],
-				dest: 'dist/basket.js'
+				src: ['lib/smartRequire.js'],
+				dest: 'dist/smartRequire.js'
 			}
 		},
 		uglify: {
@@ -30,18 +29,18 @@ module.exports = function( grunt ) {
 			},
 			dist: {
 				options: {
-					sourceMap: 'dist/basket.min.map'
+					sourceMap: 'dist/smartRequire.min.map'
 				},
 				files: {
-					'dist/basket.min.js': ['dist/basket.js']
+					'dist/smartRequire.min.js': ['dist/smartRequire.js']
 				}
 			},
 			full: {
 				options: {
-					sourceMap: 'dist/basket.full.map'
+					sourceMap: 'dist/smartRequire.full.map'
 				},
 				files: {
-					'dist/basket.full.min.js': ['bower_components/rsvp/rsvp.min.js', 'dist/basket.js']
+					'dist/smartRequire.full.min.js': ['bower_components/rsvp/rsvp.min.js', 'dist/smartRequire.js']
 				}
 			}
 		},
@@ -70,7 +69,7 @@ module.exports = function( grunt ) {
 			options: {
 				jshintrc: '.jshintrc'
 			},
-			all: ['Gruntfile.js', 'lib/basket.js', 'test/tests.js']
+			all: ['Gruntfile.js', 'lib/smartRequire.js', 'test/tests.js']
 		}
 	});
 
