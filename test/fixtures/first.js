@@ -1,1 +1,1 @@
-basket.order = 'first';
+smartRequire.order = 'first';

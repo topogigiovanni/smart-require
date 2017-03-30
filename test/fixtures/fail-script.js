@@ -1,1 +1,1 @@
-basket.fail = true;
+smartRequire.fail = true;

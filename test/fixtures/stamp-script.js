@@ -1,1 +1,1 @@
-basket.lastXHR = +new Date();
+smartRequire.lastXHR = +new Date();

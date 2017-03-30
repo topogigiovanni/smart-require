@@ -1,1 +1,1 @@
-basket.order = (basket.order || '') + 'second';
+smartRequire.order = (smartRequire.order || '') + 'second';

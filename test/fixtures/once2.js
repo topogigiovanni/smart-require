@@ -1,1 +1,1 @@
-basket.once2 = ++basket.once2 || 1;
+smartRequire.once2 = ++smartRequire.once2 || 1;
