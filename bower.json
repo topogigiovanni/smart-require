@@ -1,5 +1,5 @@
 {
-	"name": "smartRequire.js",
+	"name": "smart-require",
 	"main": "dist/smartRequire.js",
 	"ignore": [
 		"_*",
